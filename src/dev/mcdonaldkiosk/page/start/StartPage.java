@@ -26,7 +26,7 @@ public class StartPage extends KioskPage {
   
   private ImageTextPanel createImageTextPanel() {
     final ImageTextPanel imgTextPanel = new ImageTextPanel(new ImageIcon("image/bg_info2.jpg"),
-                                                           LangCheck.isTagalog() ? "주문하시려면 화면을 터치하세요" : "TOUCH TO START");
+                                                           LangCheck.isTagalog() ? "PINDUTIN PARA MAGSIMULA" : "TOUCH TO START");
     imgTextPanel.setSize(Display.WINDOWS_HALF_WIDTH, Display.WINDOWS_AVALIABLE_HEIGHT);
     imgTextPanel.setLocation(0, 0);
     
