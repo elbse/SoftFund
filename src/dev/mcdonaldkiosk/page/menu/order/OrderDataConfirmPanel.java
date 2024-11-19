@@ -46,7 +46,7 @@ class OrderDataConfirmPanel extends JPanel {
   }
 
   private void initTextLabel() {
-    ORDER_TEXT_LABEL.setText(LangCheck.isKorean()
+    ORDER_TEXT_LABEL.setText(LangCheck.isTagalog()
         ? "<html>주문수량<br>주문금액<br>총 칼로리</html>"
         : "<html>Order quantity<br>Order amount<br>Total calories</html>");
     ORDER_TEXT_LABEL.setHorizontalAlignment(JLabel.CENTER);
@@ -60,10 +60,10 @@ class OrderDataConfirmPanel extends JPanel {
   }
 
   private void initButton() {
-    CANCLE_BTN.setText(LangCheck.isKorean() ? "주문취소" : "CANCEL ORDER");
+    CANCLE_BTN.setText(LangCheck.isTagalog() ? "주문취소" : "CANCEL ORDER");
     CANCLE_BTN.setBackground(CANCLE_BTN_COLOR);
 
-    PAYMENT_BTN.setText(LangCheck.isKorean() ? "주문진행" : "COMPLETE ORDER");
+    PAYMENT_BTN.setText(LangCheck.isTagalog() ? "주문진행" : "COMPLETE ORDER");
     PAYMENT_BTN.setBackground(PAYMENT_BTN_COLR);
   }
 
@@ -76,7 +76,7 @@ class OrderDataConfirmPanel extends JPanel {
     PAYMENT_BTN.addActionListener((e) -> {
       if (kioskOrderData.getOrderQuantity() == 0) {
         KioskAudioPlayer.newInstance(
-            LangCheck.isKorean() ? "sound/order.wav" : "sound/order_eng.wav").play();
+            LangCheck.isTagalog() ? "sound/order.wav" : "sound/order_eng.wav").play();
       } else {
         menuPage.nextPage();
       }
