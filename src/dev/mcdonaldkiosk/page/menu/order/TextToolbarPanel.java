@@ -6,18 +6,7 @@ import java.awt.GridLayout;
 import javax.swing.JLabel;
 import javax.swing.JPanel;
 
-/**
- * Class Role : TextLabel을 ToolBar형식으로 제공하는 패널이다.
- *
- * 특징 -
- * 1. 입력된 텍스트의 갯수만큼 GridLayout(0, textCnt) 형식의 레이아웃이 사용된다.
- * 2. 입력된 텍스트는 지정된 라벨의 디자인으로 툴바에 추가된다.
- *
- * 기능 -
- * 텍스트입력을 제공한다.
- *
- * @author Jaehyeon Kim
- */
+
 class TextToolbarPanel {
 
   private final JPanel TEXT_TOOLBAR_PANEL = new JPanel();

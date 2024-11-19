@@ -13,14 +13,6 @@ import dev.mcdonaldkiosk.page.KioskPageType;
 import dev.mcdonaldkiosk.page.PageData;
 import dev.mcdonaldkiosk.util.Display;
 
-/**
- * Class Role : 식사장소를 선택할 수 있는 View 컴포넌트.
- * 
- * 주문언어 선택을 제공한다.
- * 페이지에 공통으로 가이드 패널(CommonGuidePanel)이 사용된다.
- *
- * @author Jaeheyon Kim
- */
 public class EatPlacePage extends KioskPage {
   
   private enum SelectType {
@@ -28,7 +20,7 @@ public class EatPlacePage extends KioskPage {
   }
 
   public EatPlacePage() {
-    super(new PageData.Builder(LangCheck.isKorean() ? "sound/place.wav" : "sound/place_eng.wav")
+    super(new PageData.Builder(LangCheck.isTagalog() ? "sound/place.wav" : "sound/place_eng.wav")
                       .nextPageType(KioskPageType.PAYMENT_PLACE_PAGE)
                       .previousPageType(KioskPageType.START_PAGE)
                       .build());
@@ -42,7 +34,7 @@ public class EatPlacePage extends KioskPage {
   
   private void addEatPlaceGuidePanel() {
     this.add(createGuidePanel(SelectType.EAT_PLACE,
-        LangCheck.isKorean() ? "식사하실 장소를 선택해 주세요" : "PLEASE SELECT A PLACE TO EAT"));
+        LangCheck.isTagalog() ? "Pumili ng Lugar ng Kainan" : "PLEASE SELECT A PLACE TO EAT"));
   }
   
   private void addLangGuidePanel() {
@@ -54,13 +46,13 @@ public class EatPlacePage extends KioskPage {
     switch (type) {
       case EAT_PLACE : 
         guidePanel.addItem(
-            createPlaceBtn(EatPlace.EAT_IN, LangCheck.isKorean() ? "매장 식사" : "EAT IN", "image/icon_eat.jpg"),
-            createPlaceBtn(EatPlace.TAKE_OUT, LangCheck.isKorean() ? "테이크 아웃(포장)" : "TAKE OUT", "image/icon_take.jpg"));
+            createPlaceBtn(EatPlace.EAT_IN, LangCheck.isTagalog() ? "Kumain sa Loob" : "EAT IN", "image/icon_eat.jpg"),
+            createPlaceBtn(EatPlace.TAKE_OUT, LangCheck.isTagalog() ? "Pang-Uwi" : "TAKE OUT", "image/icon_take.jpg"));
         break;
       case LANG :
         initLangPanel(guidePanel);
         guidePanel.addItem(
-            createLangBtn(Language.KOREAN, LangCheck.isKorean() ? "한국어" : "KOREAN"),
+            createLangBtn(Language.TAGALOG, LangCheck.isTagalog() ? "Tagalog" : "TAGALOG"),
             createLangBtn(Language.ENGLISH, "ENGLISH"));
         break;
       default :

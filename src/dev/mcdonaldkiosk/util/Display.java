@@ -5,11 +5,6 @@ import java.awt.GraphicsEnvironment;
 import java.awt.Rectangle;
 import java.awt.Toolkit;
 
-/**
- * Class Role : 디스플레이 화면 크기의 정보를 제공한다.
- *
- * @author Jaehyeon Kim
- */
 public class Display {
 
   private static final int SCREEN_HEIGHT;
