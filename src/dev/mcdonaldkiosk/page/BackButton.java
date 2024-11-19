@@ -19,7 +19,7 @@ public class BackButton extends JButton {
   }
 
   private void init() {
-    this.setText(LangCheck.isTagalog() ? "Bumalik" : "BACK");
+    this.setText(LangCheck.isTagalog() ? "BUMALIK" : "BACK");
     this.setSize(WIDTH, HEIGHT);
     this.setBackground(BG_COLOR);
   }

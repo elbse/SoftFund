@@ -24,7 +24,7 @@ public class Menu {
 
   String toMenuButtonText(final String priceTextColor) {
     return new StringBuilder().append("<html><center>").append(NAME).append("<br>")
-        .append(LangCheck.isTagalog() ? "Presyo ₩ " : "Price ₩ ").append("<font color='")
+        .append(LangCheck.isTagalog() ? "Presyo ₱ " : "Price ₱ ").append("<font color='")
         .append(priceTextColor)
         .append("'>").append(PRICE).append("</font><br>").append(K_CAL).append("KCal")
         .append("</center></html>").toString();
@@ -32,16 +32,14 @@ public class Menu {
 
 
   private String getNameWithoutTag() {
-    // <bR></bR><BR><br><br/><br /> 태그 문자 치환
     final String tmpMenuName = NAME.replaceAll("<(/)?[bB][rR](\\s)*(/)?>", " ");
-    // 모든태그 제거
     return tmpMenuName.replaceAll("<(/)?([a-zA-Z]*)(\\s[a-zA-Z]*=[^>]*)?(\\s)*(/)?>", "");
   }
 
   @Override
   public String toString() {
     return new StringBuilder().append(getNameWithoutTag()).append(" || ")
-        .append(LangCheck.isTagalog() ? "Presyo ₩ " : "Price ₩ ").append(PRICE).append(" || ")
+        .append(LangCheck.isTagalog() ? "Presyo ₱ " : "Price ₱ ").append(PRICE).append(" || ")
         .append(K_CAL)
         .append("KCal").toString();
   }
