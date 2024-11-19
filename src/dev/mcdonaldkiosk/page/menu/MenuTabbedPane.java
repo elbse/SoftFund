@@ -14,11 +14,6 @@ import dev.mcdonaldkiosk.page.menu.table.MenuTable;
 import dev.mcdonaldkiosk.page.menu.table.SetMenuTable;
 import dev.mcdonaldkiosk.page.menu.table.SnackTable;
 
-/**
- * Class Role : 메뉴테이블들을 Tab형식으로 제공하는 컴포넌트이다.
- *
- * @author Jaehyeon, Kim
- */
 class MenuTabbedPane extends JTabbedPane {
 
   private final ArrayList<MenuTable> menuTableList = new ArrayList<>();
@@ -30,14 +25,14 @@ class MenuTabbedPane extends JTabbedPane {
   }
 
   private void createMenuTableOfList(MenuPage menuPage, KioskOrderData kioskOrderData) {
-    menuTableList.add(new BurgerTable(menuPage, kioskOrderData, 0, LangCheck.isKorean() ? 4 : 3));
-    menuTableList.add(new SnackTable(menuPage, kioskOrderData, 0, LangCheck.isKorean() ? 4 : 3));
-    menuTableList.add(new SetMenuTable(menuPage, kioskOrderData, 0, LangCheck.isKorean() ? 4 : 3));
-    menuTableList.add(new McCafeTable(menuPage, kioskOrderData, 0, LangCheck.isKorean() ? 4 : 3));
-    menuTableList.add(new McLunchTable(menuPage, kioskOrderData, 0, LangCheck.isKorean() ? 4 : 3));
-    menuTableList.add(new DrinkTable(menuPage, kioskOrderData, 0, LangCheck.isKorean() ? 4 : 3));
-    menuTableList.add(new McMoningTable(menuPage, kioskOrderData, 0, LangCheck.isKorean() ? 4 : 3));
-    menuTableList.add(new DessertTable(menuPage, kioskOrderData, 0, LangCheck.isKorean() ? 4 : 3));
+    menuTableList.add(new BurgerTable(menuPage, kioskOrderData, 0, LangCheck.isTagalog() ? 4 : 3));
+    menuTableList.add(new SnackTable(menuPage, kioskOrderData, 0, LangCheck.isTagalog() ? 4 : 3));
+    menuTableList.add(new SetMenuTable(menuPage, kioskOrderData, 0, LangCheck.isTagalog() ? 4 : 3));
+    menuTableList.add(new McCafeTable(menuPage, kioskOrderData, 0, LangCheck.isTagalog() ? 4 : 3));
+    menuTableList.add(new McLunchTable(menuPage, kioskOrderData, 0, LangCheck.isTagalog() ? 4 : 3));
+    menuTableList.add(new DrinkTable(menuPage, kioskOrderData, 0, LangCheck.isTagalog() ? 4 : 3));
+    menuTableList.add(new McMoningTable(menuPage, kioskOrderData, 0, LangCheck.isTagalog() ? 4 : 3));
+    menuTableList.add(new DessertTable(menuPage, kioskOrderData, 0, LangCheck.isTagalog() ? 4 : 3));
   }
 
   private void initTabbedPane() {

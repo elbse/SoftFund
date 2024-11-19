@@ -5,11 +5,7 @@ import dev.mcdonaldkiosk.page.KioskPage;
 import dev.mcdonaldkiosk.page.start.StartPage;
 import dev.mcdonaldkiosk.util.Display;
 
-/**
- * Class Role : 프로그램이 구동되면 보여지는 프레임이다.
- * 
- * @author Jaehyeon Kim
- */
+
 public class MainFrame extends JFrame {
   
   MainFrame() {

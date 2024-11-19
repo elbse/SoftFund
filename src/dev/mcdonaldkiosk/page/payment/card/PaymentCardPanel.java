@@ -33,7 +33,7 @@ class PaymentCardPanel extends JPanel {
   }
 
   private void initTitleLabel() {
-    TITLE_LABEL.setText(LangCheck.isKorean() ? "카드를 넣어주세요" : "INSERT YOUR CARD NOW");
+    TITLE_LABEL.setText(LangCheck.isTagalog() ? "IPASOK ANG IYONG CARD" : "INSERT YOUR CARD NOW");
     TITLE_LABEL.setHorizontalAlignment(JLabel.CENTER);
 
     this.add(TITLE_LABEL, BorderLayout.NORTH);
@@ -51,7 +51,7 @@ class PaymentCardPanel extends JPanel {
   }
 
   private void initImageTextButton() {
-    IMAGE_TEXT_BUTTON.setText(LangCheck.isKorean() ? "카드넣기" : "INSERT CARD");
+    IMAGE_TEXT_BUTTON.setText(LangCheck.isTagalog() ? "IPASOK ANG CARD" : "INSERT CARD");
     IMAGE_TEXT_BUTTON.setHorizontalTextPosition(JLabel.CENTER);
     IMAGE_TEXT_BUTTON.setForeground(Color.BLACK);
     IMAGE_TEXT_BUTTON.setResizedImg(new ImageIcon("image/card.png"), BUTTON_IMG_SIZE_WIDTH,

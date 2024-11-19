@@ -8,12 +8,6 @@ import dev.mcdonaldkiosk.util.Display;
 import dev.mcdonaldkiosk.util.ImageEdit;
 import dev.mcdonaldkiosk.util.KioskAudioPlayer;
 
-/**
- * Class Role : 메뉴들은 각각의 버튼으로 구성되어있다.
- * 해당 메뉴버튼을 담당하는 클래스이다.
- * 
- * @author Jaehyeon Kim
- */
 public class MenuButton extends JButton {
 
   private final String PRICE_FONT_COLOR = "red";
