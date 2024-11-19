@@ -5,11 +5,7 @@ import javax.swing.JButton;
 import dev.mcdonaldkiosk.lang.LangCheck;
 import dev.mcdonaldkiosk.util.Display;
 
-/**
- * Class Role : KioskPage에서 사용되는 백버튼의 디자인 및 상태를 설정한다.
- * 
- * @author Jaehyeon Kim
- */
+
 public class BackButton extends JButton {
 
 
