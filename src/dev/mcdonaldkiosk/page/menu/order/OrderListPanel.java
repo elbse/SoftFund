@@ -18,7 +18,7 @@ class OrderListPanel extends JScrollPane {
   private void initScrollPane() {
     this.setViewportView(J_LIST);
     this.setBorder(
-        BorderFactory.createTitledBorder(LangCheck.isTagalog() ? "선택메뉴" : "Select Menu")); // 경계설정
+        BorderFactory.createTitledBorder(LangCheck.isTagalog() ? "Piliin ang Menu" : "Select Menu")); // 경계설정
     this.setHorizontalScrollBarPolicy(JScrollPane.HORIZONTAL_SCROLLBAR_NEVER); // 가로바
   }
 

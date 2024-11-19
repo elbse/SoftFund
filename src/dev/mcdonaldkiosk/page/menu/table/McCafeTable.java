@@ -14,179 +14,179 @@ public class McCafeTable extends MenuTable {
   private void resisterMcCafe(final KioskOrderData kioskOrderData) {
     this.addMenu(
         createMenuButton("image/mc_cafe/prol_201501280310302830.png",
-            createMenu(LangCheck.isTagalog() ? "Premium Roast™ Coffee" : "Premium Roast™ Coffee", 1500, 10)
+            createMenu(LangCheck.isTagalog() ? "Premium Roast™ Coffee" : "Premium Roast™ Coffee", 110, 10)
             , kioskOrderData));
     this.addMenu(
         createMenuButton("image/mc_cafe/prol_201501280331001790.png",
-            createMenu(LangCheck.isTagalog() ? "Iced Coffee" : "Iced Coffee", 1500, 10)
+            createMenu(LangCheck.isTagalog() ? "Iced Coffee" : "Iced Coffee", 105, 10)
             , kioskOrderData));
     this.addMenu(
         createMenuButton("image/mc_cafe/prol_201501280338541970.png",
-            createMenu(LangCheck.isTagalog() ? "Americano" : "Americano", 2000, 13)
+            createMenu(LangCheck.isTagalog() ? "Americano" : "Americano", 90, 13)
             , kioskOrderData));
     this.addMenu(
         createMenuButton("image/mc_cafe/prol_201501280353272690.png",
-            createMenu(LangCheck.isTagalog() ? "Café Latte" : "Café Latte", 2400, 157)
+            createMenu(LangCheck.isTagalog() ? "Café Latte" : "Café Latte", 75, 157)
             , kioskOrderData));
     this.addMenu(
         createMenuButton("image/mc_cafe/prol_201510160558512030.png",
-            createMenu(LangCheck.isTagalog() ? "Caramel Macchiato" : "Caramel Macchiato", 2900, 217)
+            createMenu(LangCheck.isTagalog() ? "Caramel Macchiato" : "Caramel Macchiato", 95, 217)
             , kioskOrderData));
     this.addMenu(
         createMenuButton("image/mc_cafe/prol_201501280345458940.png",
-            createMenu(LangCheck.isTagalog() ? "Cappuccino" : "Cappuccino", 2400, 133)
+            createMenu(LangCheck.isTagalog() ? "Cappuccino" : "Cappuccino", 60, 133)
             , kioskOrderData));
     this.addMenu(
         createMenuButton("image/mc_cafe/prol_201501290511504900.png",
-            createMenu(LangCheck.isTagalog() ? "Espresso" : "Espresso", 1500, 6)
+            createMenu(LangCheck.isTagalog() ? "Espresso" : "Espresso", 55, 6)
             , kioskOrderData));
     this.addMenu(
         createMenuButton("image/mc_cafe/prol_201502020631462070.png",
-            createMenu(LangCheck.isTagalog() ? "Iced Americano" : "Iced Americano", 2500, 11)
+            createMenu(LangCheck.isTagalog() ? "Iced Americano" : "Iced Americano", 95, 11)
             , kioskOrderData));
     this.addMenu(
         createMenuButton("image/mc_cafe/prol_201501280314115040.png",
-            createMenu(LangCheck.isTagalog() ? "Iced Café Latte" : "Iced Café Latte", 2900, 103)
+            createMenu(LangCheck.isTagalog() ? "Iced Café Latte" : "Iced Café Latte", 85, 103)
             , kioskOrderData));
     this.addMenu(
         createMenuButton("image/mc_cafe/prol_201510160619136820.png",
-            createMenu(LangCheck.isTagalog() ? "Iced Caramel Macchiato" : "Iced Caramel Macchiato", 2900, 187)
+            createMenu(LangCheck.isTagalog() ? "Iced Caramel Macchiato" : "Iced Caramel Macchiato", 105, 187)
             , kioskOrderData));
     this.addMenu(
         createMenuButton("image/mc_cafe/prol_201704210613038480.png",
-            createMenu(LangCheck.isTagalog() ? "Apple Mango Yogurt Smoothie" : "Apple Mango Yogurt Smoothie", 3800,
+            createMenu(LangCheck.isTagalog() ? "Apple Mango Yogurt Smoothie" : "Apple Mango Yogurt Smoothie", 110,
                 264)
             , kioskOrderData));
     this.addMenu(
         createMenuButton("image/mc_cafe/prol_201704210622303450.png",
             createMenu(
-                LangCheck.isTagalog() ? "Strawberry Banana Yogurt Smoothie" : "Strawberry Banana Yogurt Smoothie", 3800,
+                LangCheck.isTagalog() ? "Strawberry Banana Yogurt Smoothie" : "Strawberry Banana Yogurt Smoothie", 110,
                 229)
             , kioskOrderData));
     this.addMenu(
         createMenuButton("image/mc_cafe/prol_201704210629445890.png", createMenu(
             LangCheck.isTagalog() ? "Blueberry Pomegranate Yogurt Smoothie" : "Blueberry Pomegranate Yogurt Smoothie",
-            3800, 222)
+            110, 222)
             , kioskOrderData));
     this.addMenu(
         createMenuButton("image/mc_cafe/prol_201704210506373340.png",
-            createMenu(LangCheck.isTagalog() ? "Strawberry Lemonade" : "Strawberry Lemonade", 1500, 197)
+            createMenu(LangCheck.isTagalog() ? "Strawberry Lemonade" : "Strawberry Lemonade", 110, 197)
             , kioskOrderData));
     this.addMenu(
         createMenuButton("image/mc_cafe/prol_201610261154116690.png",
-            createMenu(LangCheck.isTagalog() ? "Mocha Frappe" : "Mocha Frappe", 3800, 346)
+            createMenu(LangCheck.isTagalog() ? "Mocha Frappe" : "Mocha Frappe", 120, 346)
             , kioskOrderData));
     this.addMenu(
         createMenuButton("image/mc_cafe/prol_201312090423396200.png",
-            createMenu(LangCheck.isTagalog() ? "Americano" : "Americano", 2400, 5)
+            createMenu(LangCheck.isTagalog() ? "Americano" : "Americano", 65, 5)
             , kioskOrderData));
     this.addMenu(
         createMenuButton("image/mc_cafe/prol_201312100147004590.png",
-            createMenu(LangCheck.isTagalog() ? "Cappuccino" : "Cappuccino", 3300, 110)
+            createMenu(LangCheck.isTagalog() ? "Cappuccino" : "Cappuccino", 60, 110)
             , kioskOrderData));
     this.addMenu(
         createMenuButton("image/mc_cafe/prol_201312100203305430.png",
-            createMenu(LangCheck.isTagalog() ? "Flat White" : "Flat White", 3300, 142)
+            createMenu(LangCheck.isTagalog() ? "Flat White" : "Flat White", 30, 142)
             , kioskOrderData));
     this.addMenu(
         createMenuButton("image/mc_cafe/prol_201403170459513500.png",
-            createMenu(LangCheck.isTagalog() ? "Café Mocha" : "Café Mocha", 3300, 146)
+            createMenu(LangCheck.isTagalog() ? "Café Mocha" : "Café Mocha", 75, 146)
             , kioskOrderData));
     this.addMenu(
         createMenuButton("image/mc_cafe/prol_201312091105256050.png",
-            createMenu(LangCheck.isTagalog() ? "Espresso" : "Espresso", 2000, 3)
+            createMenu(LangCheck.isTagalog() ? "Espresso" : "Espresso", 55, 3)
             , kioskOrderData));
     this.addMenu(
         createMenuButton("image/mc_cafe/prol_201312091105541820.png",
-            createMenu(LangCheck.isTagalog() ? "Espresso Macchiato" : "Espresso Macchiato", 2300, 6)
+            createMenu(LangCheck.isTagalog() ? "Espresso Macchiato" : "Espresso Macchiato", 75, 6)
             , kioskOrderData));
     this.addMenu(
         createMenuButton("image/mc_cafe/prol_201403170531596900.png",
-            createMenu(LangCheck.isTagalog() ? "Piccolo" : "Piccolo", 2800, 76)
+            createMenu(LangCheck.isTagalog() ? "Piccolo" : "Piccolo", 85, 76)
             , kioskOrderData));
     this.addMenu(
         createMenuButton("image/mc_cafe/prol_201510160644549250.png",
-            createMenu(LangCheck.isTagalog() ? "초콜렛 아포가토" : "Chocolate Affogato", 3300, 250)
+            createMenu(LangCheck.isTagalog() ? "Chocolate Affogato" : "Chocolate Affogato", 105, 250)
             , kioskOrderData));
     this.addMenu(
         createMenuButton("image/mc_cafe/prol_201403170559363440.png",
-            createMenu(LangCheck.isTagalog() ? "아포가토" : "Affogato", 2800, 157)
+            createMenu(LangCheck.isTagalog() ? "Affogato" : "Affogato", 100, 157)
             , kioskOrderData));
     this.addMenu(
         createMenuButton("image/mc_cafe/prol_201312100227331810.png",
-            createMenu(LangCheck.isTagalog() ? "Café Latte" : "Café Latte", 3300, 135)
+            createMenu(LangCheck.isTagalog() ? "Café Latte" : "Café Latte", 120, 135)
             , kioskOrderData));
     this.addMenu(
         createMenuButton("image/mc_cafe/prol_201403170502066960.png",
-            createMenu(LangCheck.isTagalog() ? "Caramel Latte" : "Caramel Latte", 3800, 200)
+            createMenu(LangCheck.isTagalog() ? "Caramel Latte" : "Caramel Latte",110 , 200)
             , kioskOrderData));
     this.addMenu(
         createMenuButton("image/mc_cafe/prol_201510160657022070.png",
-            createMenu(LangCheck.isTagalog() ? "Hazelnut Latte" : "Hazelnut Latte", 3800, 198)
+            createMenu(LangCheck.isTagalog() ? "Hazelnut Latte" : "Hazelnut Latte", 120, 198)
             , kioskOrderData));
     this.addMenu(
         createMenuButton("image/mc_cafe/prol_201312100251215360.png",
-            createMenu(LangCheck.isTagalog() ? "Vanilla Latte" : "Vanilla Latte", 3800, 203)
+            createMenu(LangCheck.isTagalog() ? "Vanilla Latte" : "Vanilla Latte", 130, 203)
             , kioskOrderData));
     this.addMenu(
         createMenuButton("image/mc_cafe/prol_201312100734101020.png",
-            createMenu(LangCheck.isTagalog() ? "Hot Chocolate" : "Hot Chocolate", 3300, 186)
+            createMenu(LangCheck.isTagalog() ? "Hot Chocolate" : "Hot Chocolate", 50, 186)
             , kioskOrderData));
     this.addMenu(
         createMenuButton("image/mc_cafe/prol_201403170401131370.png",
-            createMenu(LangCheck.isTagalog() ? "Premium Tea" : "Premium Tea", 2500, 0)
+            createMenu(LangCheck.isTagalog() ? "Premium Tea" : "Premium Tea", 85, 0)
             , kioskOrderData));
     this.addMenu(
         createMenuButton("image/mc_cafe/prol_201312091104271210.png",
-            createMenu(LangCheck.isTagalog() ? "Babycino" : "Babycino", 500, 40)
+            createMenu(LangCheck.isTagalog() ? "Babycino" : "Babycino", 15, 40)
             , kioskOrderData));
     this.addMenu(
         createMenuButton("image/mc_cafe/prol_201312100847100620.png",
-            createMenu(LangCheck.isTagalog() ? "Iced Americano" : "Iced Americano", 2400, 5)
+            createMenu(LangCheck.isTagalog() ? "Iced Americano" : "Iced Americano", 75, 5)
             , kioskOrderData));
     this.addMenu(
         createMenuButton("image/mc_cafe/prol_201312100851144040.png",
-            createMenu(LangCheck.isTagalog() ? "Iced Chocolate" : "Iced Chocolate", 3800, 327)
+            createMenu(LangCheck.isTagalog() ? "Iced Chocolate" : "Iced Chocolate", 85, 327)
             , kioskOrderData));
     this.addMenu(
         createMenuButton("image/mc_cafe/prol_201312100856188810.png",
-            createMenu(LangCheck.isTagalog() ? "Iced Cafe Mocha" : "Iced Cafe Mocha", 3800, 167)
+            createMenu(LangCheck.isTagalog() ? "Iced Cafe Mocha" : "Iced Cafe Mocha", 105, 167)
             , kioskOrderData));
     this.addMenu(
         createMenuButton("image/mc_cafe/prol_201312100908407470.png",
-            createMenu(LangCheck.isTagalog() ? "Peach Ice Tea" : "Peach Ice Tea", 3900, 155)
+            createMenu(LangCheck.isTagalog() ? "Peach Ice Tea" : "Peach Ice Tea", 110, 155)
             , kioskOrderData));
     this.addMenu(
         createMenuButton("image/mc_cafe/prol_201312100918340880.png",
-            createMenu(LangCheck.isTagalog() ? "Raspberry Ice Tea" : "Raspberry Ice Tea", 3900, 155)
+            createMenu(LangCheck.isTagalog() ? "Raspberry Ice Tea" : "Raspberry Ice Tea", 105, 155)
             , kioskOrderData));
     this.addMenu(
         createMenuButton("image/mc_cafe/prol_201312100929471100.png",
-            createMenu(LangCheck.isTagalog() ? "Iced Cafe Latte" : "Iced Cafe Latte", 3700, 93)
+            createMenu(LangCheck.isTagalog() ? "Iced Cafe Latte" : "Iced Cafe Latte", 110, 93)
             , kioskOrderData));
     this.addMenu(
         createMenuButton("image/mc_cafe/prol_201403170506071500.png",
-            createMenu(LangCheck.isTagalog() ? "Iced Caramel Latte" : "Iced Caramel Latte", 4200, 158)
+            createMenu(LangCheck.isTagalog() ? "Iced Caramel Latte" : "Iced Caramel Latte", 120, 158)
             , kioskOrderData));
     this.addMenu(
         createMenuButton("image/mc_cafe/prol_201403170503515230.png",
-            createMenu(LangCheck.isTagalog() ? "Iced Hazelnut Latte" : "Iced Hazelnut Latte", 4200, 156)
+            createMenu(LangCheck.isTagalog() ? "Iced Hazelnut Latte" : "Iced Hazelnut Latte", 130, 156)
             , kioskOrderData));
     this.addMenu(
         createMenuButton("image/mc_cafe/prol_201403170505356570.png",
-            createMenu(LangCheck.isTagalog() ? "Iced Vanilla Latte" : "Iced Vanilla Latte", 4200, 161)
+            createMenu(LangCheck.isTagalog() ? "Iced Vanilla Latte" : "Iced Vanilla Latte", 120, 161)
             , kioskOrderData));
     this.addMenu(
         createMenuButton("image/mc_cafe/prol_201403170507233320.png",
-            createMenu(LangCheck.isTagalog() ? "Chocolate Frappe" : "Chocolate Frappe", 4500, 390)
+            createMenu(LangCheck.isTagalog() ? "Chocolate Frappe" : "Chocolate Frappe", 130, 390)
             , kioskOrderData));
     this.addMenu(
         createMenuButton("image/mc_cafe/prol_201510280616550500.png",
-            createMenu(LangCheck.isTagalog() ? "Strawberry Frappe" : "Strawberry Frappe", 4500, 332)
+            createMenu(LangCheck.isTagalog() ? "Strawberry Frappe" : "Strawberry Frappe", 135, 332)
             , kioskOrderData));
     this.addMenu(
         createMenuButton("image/mc_cafe/prol_201501280222157270.png",
-            createMenu(LangCheck.isTagalog() ? "Tomato Juice" : "Tomato Juice", 3500, 96)
+            createMenu(LangCheck.isTagalog() ? "Tomato Juice" : "Tomato Juice", 135, 96)
             , kioskOrderData));
   }
 

@@ -22,46 +22,46 @@ public class McLunchTable extends MenuTable {
             , kioskOrderData));
     this.addMenu(
         createMenuButton("image/mc_lunch/prol_201402210535304330.png",
-            createMenu(LangCheck.isTagalog() ? "Big Mac®<br>Extra Value Meal" : "Big Mac®<br>Extra Value Meal", 4900, 880)
+            createMenu(LangCheck.isTagalog() ? "Big Mac®<br>Extra Value Meal" : "Big Mac®<br>Extra Value Meal", 400, 880)
             , kioskOrderData));
     this.addMenu(
         createMenuButton("image/mc_lunch/prol_201312021239480850.png",
             createMenu(LangCheck.isTagalog() ? "McSpicy™ Shanghai Burger<br>Extra Value Meal"
-                : "McSpicy™ Shanghai Burger<br>Extra Value Meal", 4900, 831)
+                : "McSpicy™ Shanghai Burger<br>Extra Value Meal", 400, 831)
             , kioskOrderData));
     this.addMenu(
         createMenuButton("image/mc_lunch/prol_201508070731369560.png",
             createMenu(LangCheck.isTagalog() ? "1955 Burger™<br>Extra Value Meal" : "1955 Burger™<br>Extra Value Meal",
-                5900, 877)
+                400, 877)
             , kioskOrderData));
     this.addMenu(
         createMenuButton("image/mc_lunch/prol_201312021239276890.png",
             createMenu(LangCheck.isTagalog() ? "Quarter Pounder® with Cheese<br>Extra Value Meal"
-                : "Quarter Pounder® with Cheese<br>Extra Value Meal", 5400, 864)
+                : "Quarter Pounder® with Cheese<br>Extra Value Meal", 400, 864)
             , kioskOrderData));
     this.addMenu(
         createMenuButton("image/mc_lunch/prol_201612221010079000.png",
-            createMenu(LangCheck.isTagalog() ? "Supreme Shrimp Burger Meal" : "Supreme Shrimp Burger Meal", 4900, 772)
+            createMenu(LangCheck.isTagalog() ? "Supreme Shrimp Burger Meal" : "Supreme Shrimp Burger Meal", 400, 772)
             , kioskOrderData));
     this.addMenu(
         createMenuButton("image/mc_lunch/prol_201612221010197520.png",
-            createMenu(LangCheck.isTagalog() ? "Shrimp Beef Burger Meal" : "Shrimp Beef Burger Meal", 5900, 893)
+            createMenu(LangCheck.isTagalog() ? "Shrimp Beef Burger Meal" : "Shrimp Beef Burger Meal", 600, 893)
             , kioskOrderData));
     this.addMenu(
         createMenuButton("image/mc_lunch/prol_201312021239122200.png",
             createMenu(LangCheck.isTagalog() ? "Bacon Tomato Deluxe™<br>Extra Value Meal"
-                : "Bacon Tomato Deluxe™<br>Extra Value Meal", 5500, 887)
+                : "Bacon Tomato Deluxe™<br>Extra Value Meal", 300, 887)
             , kioskOrderData));
     this.addMenu(
         createMenuButton("image/mc_lunch/prol_201312021240387800.png",
             createMenu(LangCheck.isTagalog() ? "Bulgogi Burger<br>Extra Value Meal" : "Bulgogi Burger<br>Extra Value Meal",
-                3500, 767)
+                500, 767)
             , kioskOrderData));
     this.addMenu(
         createMenuButton("image/mc_lunch/prol_201312021240536440.png",
             createMenu(
                 LangCheck.isTagalog() ? "Double Bulgogi Burger<br>Extra Value Meal" : "Double Bulgogi Burger<br>Extra Value Meal",
-                4900, 1014)
+                500, 1014)
             , kioskOrderData));
   }
 
