@@ -32,10 +32,10 @@ class OrderTotalDataPanel extends JPanel {
   private JPanel createTotalListPanel() {
     JPanel totalListPanel = new JPanel();
     totalListPanel.setLayout(new GridLayout(0, 4));
-    totalListPanel.add(new JLabel((LangCheck.isKorean() ? "나의주문 : " : "Eating place : ") + kioskOrderData.getEatPlace(), JLabel.CENTER));
-    totalListPanel.add(new JLabel((LangCheck.isKorean() ? "주문수량 : " : "Order quantity : ") + kioskOrderData.getOrderQuantity(), JLabel.CENTER));
-    totalListPanel.add(new JLabel((LangCheck.isKorean() ? "주문금액 : " : "Order amount : ") + kioskOrderData.getOrderAmount(), JLabel.CENTER));
-    totalListPanel.add(new JLabel((LangCheck.isKorean() ? "총 칼로리 : " : "Total calories : ") + kioskOrderData.getOrderKCal(), JLabel.CENTER));
+    totalListPanel.add(new JLabel((LangCheck.isTagalog() ? "Lugar ng Pagkakainan : " : "Eating place : ") + kioskOrderData.getEatPlace(), JLabel.CENTER));
+    totalListPanel.add(new JLabel((LangCheck.isTagalog() ? "Bilang ng Order : " : "Order quantity : ") + kioskOrderData.getOrderQuantity(), JLabel.CENTER));
+    totalListPanel.add(new JLabel((LangCheck.isTagalog() ? "Halag ng Order : " : "Order amount : ") + kioskOrderData.getOrderAmount(), JLabel.CENTER));
+    totalListPanel.add(new JLabel((LangCheck.isTagalog() ? "Pangkalahatang kalorya : " : "Total calories : ") + kioskOrderData.getOrderKCal(), JLabel.CENTER));
 
     return totalListPanel;
   }

@@ -12,7 +12,7 @@ import dev.mcdonaldkiosk.util.Display;
  */
 public class BackButton extends JButton {
 
-  /* 버튼 사이즈 */
+
   private static final int WIDTH = Display.WINDOWS_HALF_WIDTH / 5;
   private static final int HEIGHT = Display.WINDOWS_AVALIABLE_HEIGHT / 20;
   private static final Color BG_COLOR = Color.LIGHT_GRAY;
@@ -23,7 +23,7 @@ public class BackButton extends JButton {
   }
 
   private void init() {
-    this.setText(LangCheck.isKorean() ? "뒤로" : "BACK");
+    this.setText(LangCheck.isTagalog() ? "Bumalik" : "BACK");
     this.setSize(WIDTH, HEIGHT);
     this.setBackground(BG_COLOR);
   }

@@ -10,27 +10,21 @@ import dev.mcdonaldkiosk.page.PageData;
 import dev.mcdonaldkiosk.page.payment.place.PaymentPlace;
 import dev.mcdonaldkiosk.util.Display;
 
-/**
- * Class Role : 주문데이터(KioskOrderData)의 확인 체크를 제공하는 페이지 이다.
- * 디자인이 반영된 ConfirmButton을 사용한다.
- *
- * @author Jaehyeon Kim
- */
+
 public class ConfirmPage extends KioskPage {
 
-  // 가운데 패널
   private final CommonGuidePanel ORDER_CONFIRM_GUIDE_PANEL = new CommonGuidePanel(
-      LangCheck.isKorean() ? "주문을 확인해주세요" : "IS THIS ORDER CORRECT?", 0, 1);
+      LangCheck.isTagalog() ? "Tama ba ang iyong order?" : "IS THIS ORDER CORRECT?", 0, 1);
 
   private OrderTotalDataPanel orderTotalDataPanel;
 
   // 하단 패널
   private final CommonGuidePanel YES_NO_SELECT_PANEL = new CommonGuidePanel(0, 2);
-  private final ConfirmButton NO_BUTTON = new ConfirmButton(LangCheck.isKorean() ? "취소" : "NO");
-  private final ConfirmButton YES_BUTTON = new ConfirmButton(LangCheck.isKorean() ? "확인" : "YES");
+  private final ConfirmButton NO_BUTTON = new ConfirmButton(LangCheck.isTagalog() ? "Hindi" : "NO");
+  private final ConfirmButton YES_BUTTON = new ConfirmButton(LangCheck.isTagalog() ? "Oo" : "YES");
 
   public ConfirmPage() {
-    super(new PageData.Builder(LangCheck.isKorean() ? "sound/check.wav" : "sound/check_eng.wav")
+    super(new PageData.Builder(LangCheck.isTagalog() ? "sound/check.wav" : "sound/check_eng.wav")
                       .nextPageType(KioskPage.getKioskOrderData().getPaymentPlace().equals(PaymentPlace.COUNTER)
                                        ? KioskPageType.END_PAGE : KioskPageType.PAYMENT_CARD_PAGE)
                       .previousPageType(KioskPageType.MENU_PAGE)
