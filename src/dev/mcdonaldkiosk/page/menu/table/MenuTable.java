@@ -10,6 +10,7 @@ import dev.mcdonaldkiosk.page.menu.MenuButton;
 import dev.mcdonaldkiosk.page.menu.MenuPage;
 import dev.mcdonaldkiosk.page.menu.order.KioskOrderData;
 
+
 public abstract class MenuTable {
 
   private final JScrollPane scroll = new JScrollPane();
@@ -24,8 +25,8 @@ public abstract class MenuTable {
   }
 
   private void initScroll() {
-    scroll.getVerticalScrollBar().setUnitIncrement(10);
-    scroll.getHorizontalScrollBar().setUnitIncrement(10);
+    scroll.getVerticalScrollBar().setUnitIncrement(10); // 스크롤 속도 (세로)
+    scroll.getHorizontalScrollBar().setUnitIncrement(10); // 가로 스크롤 (가로)
     scroll.setViewportView(menuPanel);
   }
 
@@ -43,6 +44,7 @@ public abstract class MenuTable {
   MenuButton createMenuButton(final String imgPath, final Menu menu, final KioskOrderData kioskOrderData) {
     return new MenuButton(imgPath, menu, menuPage, kioskOrderData);
   }
+
 
   void addMenu(final MenuButton... buttons) {
     for (MenuButton button : buttons) {

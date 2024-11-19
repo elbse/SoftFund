@@ -18,7 +18,7 @@ public class ConfirmPage extends KioskPage {
 
   private OrderTotalDataPanel orderTotalDataPanel;
 
-  // 하단 패널
+
   private final CommonGuidePanel YES_NO_SELECT_PANEL = new CommonGuidePanel(0, 2);
   private final ConfirmButton NO_BUTTON = new ConfirmButton(LangCheck.isTagalog() ? "Hindi" : "NO");
   private final ConfirmButton YES_BUTTON = new ConfirmButton(LangCheck.isTagalog() ? "Oo" : "YES");
@@ -61,9 +61,8 @@ public class ConfirmPage extends KioskPage {
             * 3 / 4);
   }
 
-  // set 설정하는 느낌
   private void setListener() {
-    this.NO_BUTTON.addActionListener((e) -> this.loadPreviousPage()); // 한줄짜리는 { } 지울수 있음.
+    this.NO_BUTTON.addActionListener((e) -> this.loadPreviousPage());
 
     this.YES_BUTTON.addActionListener((e) -> this.loadNextPage());
   }
