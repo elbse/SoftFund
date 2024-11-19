@@ -1,6 +1,8 @@
 package dev.mcdonaldkiosk.util;
 
-import com.sun.istack.internal.NotNull;
+//import com.sun.istack.internal.NotNull;
+import org.jetbrains.annotations.NotNull;
+
 import java.io.File;
 import java.io.IOException;
 import java.util.HashMap;
