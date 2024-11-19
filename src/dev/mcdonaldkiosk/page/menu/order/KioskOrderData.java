@@ -14,6 +14,7 @@ import dev.mcdonaldkiosk.page.payment.place.PaymentPlace;
  *
  * @author Jaehyeon Kim
  */
+
 public class KioskOrderData {
 
   private final List<Menu> orderMenuList = new ArrayList<>();
