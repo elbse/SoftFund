@@ -11,11 +11,7 @@ import java.awt.Color;
 import java.awt.event.MouseAdapter;
 import java.awt.event.MouseEvent;
 
-/**
- * Class Role : 카드 결제지불 페이지
- * 
- * @author Jaehyeon Kim
- */
+
 public class PaymentCardPage extends KioskPage {
 
   private final PaymentCardPanel PAYMENT_CARD_PANEL = new PaymentCardPanel();

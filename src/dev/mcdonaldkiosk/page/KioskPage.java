@@ -74,7 +74,7 @@ public abstract class KioskPage extends JPanel {
     return backBtn;
   }
 
-  // 배경이미지 설정
+
   protected void setBackgroundImg(final String bgPath) {
     if (bgPath != null) { this.bgPath = bgPath; }
   }
@@ -84,7 +84,7 @@ public abstract class KioskPage extends JPanel {
     this.add(backBtn);
   }
   
-  /* BackButton Z-Order를 상위로 올린다.  */
+
   private void setBackBtnZOrderByTop() {
     this.setComponentZOrder(backBtn, 0);
   }
@@ -93,7 +93,7 @@ public abstract class KioskPage extends JPanel {
     return bgPath != null;
   }
 
-  /* 배경이미지 설정 */
+
   @Override
   protected void paintComponent(final Graphics g) {
     if (isBgImgEmpty()) {
