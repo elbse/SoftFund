@@ -16,7 +16,7 @@ public class PaymentCardPage extends KioskPage {
   private final PaymentCardPanel PAYMENT_CARD_PANEL = new PaymentCardPanel();
 
   public PaymentCardPage() {
-    super(new PageData.Builder(LangCheck.isTagalog() ? "sound/card.wav" : "sound/card_eng.wav")
+    super(new PageData.Builder(LangCheck.isTagalog() ? "sound/Card - Tag.wav" : "sound/card_eng.wav")
                       .nextPageType(KioskPageType.END_PAGE)
                       .previousPageType(KioskPageType.CONFIRM_PAGE)
                       .build());
