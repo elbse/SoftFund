@@ -4,11 +4,7 @@ import dev.mcdonaldkiosk.lang.LangCheck;
 import dev.mcdonaldkiosk.page.menu.MenuPage;
 import dev.mcdonaldkiosk.page.menu.order.KioskOrderData;
 
-/**
- * Class Role : 디저트 메뉴의 버튼 구성을 가진 MenuTable이다.
- *
- * @author Jaehyeon Kim
- */
+
 public class DessertTable extends MenuTable {
 
   public DessertTable(MenuPage menuPage, final KioskOrderData kioskOrderData, final int rows,

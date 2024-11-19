@@ -47,7 +47,7 @@ class OrderDataConfirmPanel extends JPanel {
 
   private void initTextLabel() {
     ORDER_TEXT_LABEL.setText(LangCheck.isTagalog()
-        ? "<html>주문수량<br>주문금액<br>총 칼로리</html>"
+        ? "<html>Dami ng order<br>Halaga ng order<br>Kabuuang Kalorya</html>"
         : "<html>Order quantity<br>Order amount<br>Total calories</html>");
     ORDER_TEXT_LABEL.setHorizontalAlignment(JLabel.CENTER);
   }
@@ -60,10 +60,10 @@ class OrderDataConfirmPanel extends JPanel {
   }
 
   private void initButton() {
-    CANCLE_BTN.setText(LangCheck.isTagalog() ? "주문취소" : "CANCEL ORDER");
+    CANCLE_BTN.setText(LangCheck.isTagalog() ? "KANSELAHIN ANG ORDER" : "CANCEL ORDER");
     CANCLE_BTN.setBackground(CANCLE_BTN_COLOR);
 
-    PAYMENT_BTN.setText(LangCheck.isTagalog() ? "주문진행" : "COMPLETE ORDER");
+    PAYMENT_BTN.setText(LangCheck.isTagalog() ? "KUMPLETUHIN ANG ORDER" : "COMPLETE ORDER");
     PAYMENT_BTN.setBackground(PAYMENT_BTN_COLR);
   }
 

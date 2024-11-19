@@ -4,11 +4,7 @@ import dev.mcdonaldkiosk.lang.LangCheck;
 import dev.mcdonaldkiosk.page.menu.MenuPage;
 import dev.mcdonaldkiosk.page.menu.order.KioskOrderData;
 
-/**
- * Class Role : 버거 메뉴의 버튼 구성을 가진 MenuTable이다.
- *
- * @author Jaehyeon Kim
- */
+
 public class BurgerTable extends MenuTable {
 
   public BurgerTable(MenuPage menuPage, final KioskOrderData kioskOrderData, final int rows, final int cols) {
