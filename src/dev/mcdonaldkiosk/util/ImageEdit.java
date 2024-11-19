@@ -3,9 +3,6 @@ package dev.mcdonaldkiosk.util;
 import java.awt.Image;
 import javax.swing.ImageIcon;
 
-/**
- * Class Role : 이미지 편집(리사이징)을 담당한다.
- */
 public class ImageEdit {
 
   public static ImageIcon getResizeIcon(String path, int width, int height) {
