@@ -10,15 +10,10 @@ import dev.mcdonaldkiosk.page.KioskPageType;
 import dev.mcdonaldkiosk.page.PageData;
 import dev.mcdonaldkiosk.util.Display;
 
-/**
- * Class Role : 결제장소 선택 페이지
- * 
- * @author Jaehyeon Kim
- */
 public class PaymentPlacePage extends KioskPage {
 
   private final CommonGuidePanel PAYMENT_SELECT_PANEL = new CommonGuidePanel(
-      LangCheck.isKorean() ? "어디에서 지불하시겠습니까?" : "WHERE DO YOU WANT TO PAY?", 0, 2);
+      LangCheck.isTagalog() ? "SAAN MO NAIS MAGBAYAD?" : "WHERE DO YOU WANT TO PAY?", 0, 2);
 
   private final ImageTextButton COUNTER_BTN = new ImageTextButton();
   private final ImageTextButton KIOSK_BTN = new ImageTextButton();
@@ -26,7 +21,7 @@ public class PaymentPlacePage extends KioskPage {
   private ActionListener placeListener = null;
 
   public PaymentPlacePage() {
-    super(new PageData.Builder(LangCheck.isKorean() ? "sound/pay.wav" : "sound/pay_eng.wav")
+    super(new PageData.Builder(LangCheck.isTagalog() ? "sound/pay.wav" : "sound/pay_eng.wav")
                       .nextPageType(KioskPageType.MENU_PAGE)
                       .previousPageType(KioskPageType.EAT_PLACE_PAGE)
                       .build());
@@ -53,11 +48,11 @@ public class PaymentPlacePage extends KioskPage {
     final int BUTTON_WIDTH = Display.WINDOWS_HALF_WIDTH * 4 / 15;
     final int BUTTON_HEIGHT = Display.WINDOWS_AVALIABLE_HEIGHT * 1 / 5;
 
-    COUNTER_BTN.setText(LangCheck.isKorean() ? "카운터에서 결제" : "PAYMENT AT THE COUNTER");
+    COUNTER_BTN.setText(LangCheck.isTagalog() ? "PAGBABAYAD SA COUNTER" : "PAYMENT AT THE COUNTER");
     COUNTER_BTN.setResizedImg(new ImageIcon("image/counter.jpg"), BUTTON_WIDTH, BUTTON_HEIGHT);
 
     KIOSK_BTN.setText(
-        "<html><center>" + (LangCheck.isKorean() ? "바로 결제<br>(카드 가능)"
+        "<html><center>" + (LangCheck.isTagalog() ? "DIREKTANG PAGBAYAD SA KIOSK <br>(CARD)"
             : "DIRECT PAYMENT IN KIOSK<br>(CARD)")
             + "</center></html>");
     KIOSK_BTN.setResizedImg(new ImageIcon("image/kiosk.jpg"), BUTTON_WIDTH, BUTTON_HEIGHT);
