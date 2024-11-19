@@ -43,7 +43,6 @@ public class MenuButton extends JButton {
 
   private void setListener() {
     this.addActionListener((e) -> {
-      /* 음원에 관련된건 음원관련 객체에게 맡긴다. */
       clickBGMPlayer.play();
 
       kioskOrderData.addMenu(MENU);
