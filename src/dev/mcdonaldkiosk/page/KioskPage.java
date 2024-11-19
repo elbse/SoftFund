@@ -74,7 +74,6 @@ public abstract class KioskPage extends JPanel {
     return backBtn;
   }
 
-
   protected void setBackgroundImg(final String bgPath) {
     if (bgPath != null) { this.bgPath = bgPath; }
   }
@@ -84,7 +83,6 @@ public abstract class KioskPage extends JPanel {
     this.add(backBtn);
   }
   
-
   private void setBackBtnZOrderByTop() {
     this.setComponentZOrder(backBtn, 0);
   }
@@ -92,7 +90,6 @@ public abstract class KioskPage extends JPanel {
   private boolean isBgImgEmpty() {
     return bgPath != null;
   }
-
 
   @Override
   protected void paintComponent(final Graphics g) {

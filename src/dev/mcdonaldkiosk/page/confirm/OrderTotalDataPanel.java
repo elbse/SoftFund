@@ -20,7 +20,7 @@ class OrderTotalDataPanel extends JPanel {
     initPanel();
   }
 
-  // 패널 초기화
+
   private void initPanel() {
     this.setLayout(new BorderLayout());
     this.add(new JScrollPane(new JList<Menu>(kioskOrderData.getOrderMenuArray())),
@@ -28,7 +28,7 @@ class OrderTotalDataPanel extends JPanel {
     this.add(createTotalListPanel(), BorderLayout.SOUTH);
   }
 
-  // factory 공장, 만들어 낸다.
+
   private JPanel createTotalListPanel() {
     JPanel totalListPanel = new JPanel();
     totalListPanel.setLayout(new GridLayout(0, 4));
