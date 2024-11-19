@@ -7,15 +7,7 @@ import javax.swing.SwingConstants;
 import dev.mcdonaldkiosk.util.Display;
 import dev.mcdonaldkiosk.util.ImageEdit;
 
-/**
- * Class Role : 이미지와 텍스트로 구성된 버튼이다.
- * 상단의 이미지와 하단의 텍스트 구성을 가지고 있는 버튼이다.
- *
- * 특징 :
- * 1. 이미지는 지정한 크기에 맞게 화질이 보정되어 변환된 형태를 가지고 있다.
- * 
- * @author Jaehyeon Kim
- */
+
 public class ImageTextButton extends JButton {
 
   private final int IMAGE_SIZE_WIDTH = Display.WINDOWS_HALF_WIDTH * 4 / 15;

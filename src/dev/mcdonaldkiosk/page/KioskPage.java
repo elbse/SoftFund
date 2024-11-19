@@ -13,17 +13,6 @@ import dev.mcdonaldkiosk.page.menu.order.KioskOrderData;
 import dev.mcdonaldkiosk.util.Display;
 import dev.mcdonaldkiosk.util.KioskAudioPlayer;
 
-/**
- * Class Role : MainFrame 구성에 사용되는 View 컴포넌트 이다.
- * 
- * View 컴포넌트 특징
- * 1. 로딩시 사운드가 실행
- * 2. 배경이미지 설정
- * 3. 이전버튼(BackButton) 제공
- * 4. NextPage 페이지 설정 제공
- *
- * @author Jaehyeon Kim
- */
 public abstract class KioskPage extends JPanel {
   
   protected interface OnClickListener {
