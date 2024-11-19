@@ -2,7 +2,7 @@ package dev.mcdonaldkiosk.lang;
 
 public class LangCheck {
 
-  private static Language language = Language.KOREAN;
+  private static Language language = Language.TAGALOG;
 
   private LangCheck() {
   }
@@ -11,7 +11,7 @@ public class LangCheck {
     LangCheck.language = language;
   }
 
-  public static boolean isKorean() {
-    return language == Language.KOREAN;
+  public static boolean isTagalog() {
+    return language == Language.TAGALOG;
   }
 }

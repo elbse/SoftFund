@@ -1,7 +1,7 @@
 package dev.mcdonaldkiosk.lang;
 
 public enum Language {
-  KOREAN, ENGLISH;
+  TAGALOG, ENGLISH;
 
   @Override
   public String toString() {
