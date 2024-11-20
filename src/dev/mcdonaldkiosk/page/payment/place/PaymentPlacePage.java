@@ -21,7 +21,7 @@ public class PaymentPlacePage extends KioskPage {
   private ActionListener placeListener = null;
 
   public PaymentPlacePage() {
-    super(new PageData.Builder(LangCheck.isTagalog() ? "sound/pay.wav" : "sound/pay_eng.wav")
+    super(new PageData.Builder(LangCheck.isTagalog() ? "sound/pay_tag.wav" : "sound/pay_eng.wav")
                       .nextPageType(KioskPageType.MENU_PAGE)
                       .previousPageType(KioskPageType.EAT_PLACE_PAGE)
                       .build());
@@ -33,7 +33,7 @@ public class PaymentPlacePage extends KioskPage {
   }
 
   private void initPage() {
-    this.setBackgroundImg("image/bg_green.png");
+    this.setBackgroundImg("image/bg_green.jpg");
     this.showBackBtn();
   }
 

@@ -21,7 +21,7 @@ public class MenuPage extends KioskPage {
   private final SelectedOrderConfirmPanel selectedOrderConfirmPanel;
 
   public MenuPage() {
-    super(new PageData.Builder(LangCheck.isTagalog() ? "sound/order.wav" : "sound/order_eng.wav")
+    super(new PageData.Builder(LangCheck.isTagalog() ? "sound/order_tag.wav" : "sound/order_eng.wav")
                       .nextPageType(KioskPageType.CONFIRM_PAGE)
                       .previousPageType(KioskPageType.PAYMENT_PLACE_PAGE)
                       .build());

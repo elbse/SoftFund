@@ -16,7 +16,7 @@ public class PaymentCardPage extends KioskPage {
   private final PaymentCardPanel PAYMENT_CARD_PANEL = new PaymentCardPanel();
 
   public PaymentCardPage() {
-    super(new PageData.Builder(LangCheck.isTagalog() ? "sound/Card - Tag.wav" : "sound/card_eng.wav")
+    super(new PageData.Builder(LangCheck.isTagalog() ? "sound/card_tag.wav" : "sound/card_eng.wav")
                       .nextPageType(KioskPageType.END_PAGE)
                       .previousPageType(KioskPageType.CONFIRM_PAGE)
                       .build());
@@ -27,7 +27,7 @@ public class PaymentCardPage extends KioskPage {
   }
 
   private void initPage() {
-    this.setBackgroundImg("image/bg_green.png");
+    this.setBackgroundImg("image/bg_green.jpg");
     this.showBackBtn();
   }
 
@@ -46,7 +46,7 @@ public class PaymentCardPage extends KioskPage {
     PAYMENT_CARD_PANEL.getImageTextButton().addMouseListener(new MouseAdapter() {
       @Override
       public void mouseClicked(MouseEvent e) {
-        KioskAudioPlayer.newInstance(LangCheck.isTagalog() ? "sound/ing.wav" : "sound/ing_eng.wav").play();
+        KioskAudioPlayer.newInstance(LangCheck.isTagalog() ? "sound/ing_tag.wav" : "sound/ing_eng.wav").play();
 
         try {
           Thread.sleep(5000);

@@ -20,12 +20,12 @@ public class EatPlacePage extends KioskPage {
   }
 
   public EatPlacePage() {
-    super(new PageData.Builder(LangCheck.isTagalog() ? "sound/place.wav" : "sound/place_eng.wav")
+    super(new PageData.Builder(LangCheck.isTagalog() ? "sound/place_tag.wav" : "sound/place_eng.wav")
                       .nextPageType(KioskPageType.PAYMENT_PLACE_PAGE)
                       .previousPageType(KioskPageType.START_PAGE)
                       .build());
     
-    this.setBackgroundImg("image/bg_green.png");
+    this.setBackgroundImg("image/bg_green.jpg");
     this.showBackBtn();
     
     addEatPlaceGuidePanel();

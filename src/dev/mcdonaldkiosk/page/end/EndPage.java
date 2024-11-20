@@ -15,8 +15,8 @@ public class EndPage extends KioskPage {
 
   public EndPage() {
     super(new PageData.Builder(KioskPage.getKioskOrderData().getPaymentPlace().equals(PaymentPlace.COUNTER)
-                                ? LangCheck.isTagalog() ? "sound/counter.wav" : "sound/counter_eng.wav"
-                                : LangCheck.isTagalog() ? "sound/end.wav" : "sound/end_eng.wav")
+                                ? LangCheck.isTagalog() ? "sound/counter_tag.wav" : "sound/counter_eng.wav"
+                                : LangCheck.isTagalog() ? "sound/end_tag.wav" : "sound/end_eng.wav")
                       .nextPageType(KioskPageType.START_PAGE)
                       .build());
 

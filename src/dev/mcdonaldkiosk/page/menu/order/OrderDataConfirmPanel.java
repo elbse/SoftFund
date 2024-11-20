@@ -76,7 +76,7 @@ class OrderDataConfirmPanel extends JPanel {
     PAYMENT_BTN.addActionListener((e) -> {
       if (kioskOrderData.getOrderQuantity() == 0) {
         KioskAudioPlayer.newInstance(
-            LangCheck.isTagalog() ? "sound/order.wav" : "sound/order_eng.wav").play();
+            LangCheck.isTagalog() ? "sound/order_tag.wav" : "sound/order_eng.wav").play();
       } else {
         menuPage.nextPage();
       }

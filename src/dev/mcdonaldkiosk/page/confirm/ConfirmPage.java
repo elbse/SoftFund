@@ -24,7 +24,7 @@ public class ConfirmPage extends KioskPage {
   private final ConfirmButton YES_BUTTON = new ConfirmButton(LangCheck.isTagalog() ? "Oo" : "YES");
 
   public ConfirmPage() {
-    super(new PageData.Builder(LangCheck.isTagalog() ? "sound/check.wav" : "sound/check_eng.wav")
+    super(new PageData.Builder(LangCheck.isTagalog() ? "sound/check_tag.wav" : "sound/check_eng.wav")
                       .nextPageType(KioskPage.getKioskOrderData().getPaymentPlace().equals(PaymentPlace.COUNTER)
                                        ? KioskPageType.END_PAGE : KioskPageType.PAYMENT_CARD_PAGE)
                       .previousPageType(KioskPageType.MENU_PAGE)
@@ -37,8 +37,10 @@ public class ConfirmPage extends KioskPage {
     setListener();
   }
 
+
+  // Image bg_green.png
   private void initPage() {
-    this.setBackgroundImg("image/bg_green.png");
+    this.setBackgroundImg("image/bg_green.jpg");
 
     this.add(ORDER_CONFIRM_GUIDE_PANEL);
     this.add(YES_NO_SELECT_PANEL);

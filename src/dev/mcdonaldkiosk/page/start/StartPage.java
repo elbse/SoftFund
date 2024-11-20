@@ -12,7 +12,7 @@ import dev.mcdonaldkiosk.util.Display;
 public class StartPage extends KioskPage {
   
   public StartPage() {
-    super(new PageData.Builder(LangCheck.isTagalog() ? "sound/start.wav" : "sound/start_eng.wav")
+    super(new PageData.Builder(LangCheck.isTagalog() ? "sound/start_tag.wav" : "sound/start_eng.wav")
                       .nextPageType(KioskPageType.EAT_PLACE_PAGE)
                       .build());
     
@@ -23,7 +23,8 @@ public class StartPage extends KioskPage {
   private void addImageTextPanel() {
     this.add(createImageTextPanel());
   }
-  
+
+  //Image bg_Info2
   private ImageTextPanel createImageTextPanel() {
     final ImageTextPanel imgTextPanel = new ImageTextPanel(new ImageIcon("image/bg_info2.jpg"),
                                                            LangCheck.isTagalog() ? "PINDUTIN PARA MAGSIMULA" : "TOUCH TO START");
